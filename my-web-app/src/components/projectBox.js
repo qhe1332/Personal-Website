@@ -10,14 +10,10 @@ import Contact from "../pages/contactMe";
 function Navbar(prop)
 {
     return(    
-        <nav className="nav">
-            <li><Link className="homeButton" to="/">Cherryland</Link></li>
-            <div className="nav-right">
-                <li><Link to="/projects">Projects</Link></li>
-                <li><Link to="/hobbies">Hobbies</Link></li>
-                <li><Link to="/contact">Contact Me</Link></li>
-            </div>
-        </nav>
+        <div className="project">
+            <img src={prop.src}/>
+            <div className="projectName">{prop.projectName}</div>
+        </div>
     );
 }
 

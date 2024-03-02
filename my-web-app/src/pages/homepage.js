@@ -7,7 +7,8 @@ function Homepage(prop)
     return(    
         <div>
             <Navbar/>
-            Home
+            <h1 className="title">Hello, I'm Cherry!</h1> 
+            <h4>I'm an aspiring web developer who loves </h4>
         </div>
     );
 }

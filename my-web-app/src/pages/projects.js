@@ -7,6 +7,8 @@ function Projects(prop)
     return(    
         <div>
             <Navbar/>
+            <h1>Projects</h1>
+            <div></div>
         </div>
     );
 }

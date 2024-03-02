@@ -7,6 +7,7 @@ function Hobbies(prop)
     return(    
         <div>
             <Navbar/>
+            Hobbies
         </div>
     );
 }

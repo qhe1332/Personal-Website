@@ -7,6 +7,7 @@ function ContactMe(prop)
     return(    
         <div>
             <Navbar/>
+            Contact Me
         </div>
     );
 }
