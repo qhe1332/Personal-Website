@@ -3,6 +3,10 @@
   src: url(./fonts/MadimiOne-Regular.ttf)
 }
 @font-face {
+  font-family: Darumadrop;
+  src: url(./fonts/DarumadropOne-Regular.ttf)
+}
+@font-face {
   font-family: RobotoMono-Regular;
   src: url(./fonts/RobotoMono-Regular.ttf)
 }
@@ -28,11 +32,11 @@ code {
     monospace;
 }
 
+/*--Nav--*/
 .nav {
   list-style-type: none;
   margin: 0;
   padding: 0;
-  background-color: rgb(190, 223, 255);
   overflow: hidden;
   display:flex;
   justify-content: space-between;
@@ -47,7 +51,7 @@ code {
 
 .nav .homeButton {
   font-style: bold;
-  font-family: Madimi One;
+  font-family: Darumadrop;
   font-size: 1.5em;
 }
 
@@ -59,4 +63,55 @@ code {
 
 .nav li a:hover {
   color: white;
+}
+
+/*--Home--*/
+.title {
+  font-family: Darumadrop;
+  font-size: 3.5em;
+}
+.opening {
+  background-image: linear-gradient(to bottom,#B0DEFF 75%, #FFFFFF );
+  height: 200vh;
+  width: 100vw;
+  
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.intro {
+  margin: 15vw 30vw 0vw 6vw; /*top right bottom left*/
+}
+b {
+  font-family: Darumadrop;
+  font-size: 1.5em;
+}
+
+.animation {
+  display: block;
+	position: relative;
+	z-index: 10;
+}
+
+.animation-layer {
+	background-repeat: no-repeat;
+  background-size: contain;
+	position: absolute; 
+}
+.animation-layer.parallax {
+	position: fixed;
+}
+#cloud1 {
+  background-image: url(./assets/cloud1.png);
+  width: 37vw;
+  height: 50vh;
+  top: 67vh;
+  left: -15vw;
+}
+#cloud2 {
+  background-image: url(./assets/cloud2.png);
+  height: 97vh;
+  width: 150vw;
+  top: 45vh;
+  margin-left: 30vw;
 }
