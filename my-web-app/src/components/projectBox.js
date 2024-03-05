@@ -1,19 +1,24 @@
 import React from "react";
 import { BrowserRouter as Router, Routes, Route, Link, NavLink } from "react-router-dom";
 
-import Homepage from "../pages/homepage";
-import Projects from "../pages/projects";
-import Media from "../pages/media";
-import Hobbies from "../pages/hobbies";
-import Contact from "../pages/contactMe";
 
 function Navbar(prop)
 {
-    return(    
-        <div className="project">
-            <img src={prop.src}/>
-            <div className="projectName">{prop.projectName}</div>
-        </div>
+    return(   
+        <div>
+            <a href={prop.link} target="_blank" className="projectLink">
+                <div className="project-container">
+                    <div className="projectPic"><img  src={prop.img}/></div>
+                    <div className="project-container-text">
+                        <div className="projectName">{prop.title}</div>
+                        <div className="projectType">{prop.type},{prop.year}</div>
+                        <div className="projectDesc">{prop.desc}</div>
+                    </div>
+                </div>
+            </a>
+            <hr></hr>
+        </div> 
+        
     );
 }
 
