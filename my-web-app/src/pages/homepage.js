@@ -47,15 +47,15 @@ function Homepage(prop)
                     <div className="animation-layer" id="scrolldownbutton"></div>
                 </ParallaxLayer>
                 <ParallaxLayer offset={0} speed={0.1}>
-                    <Navbar/>
+                    <Navbar />
                 </ParallaxLayer>
                 <ParallaxLayer offset={1} speed={0.1}>
                     <Project/>
                 </ParallaxLayer>
-                <ParallaxLayer offset={1.6} speed={0.8}>
+                <ParallaxLayer offset={1.78} speed={0.8}>
                     <div className="animation-layer" id="cloud4"></div>
                 </ParallaxLayer>
-                <ParallaxLayer offset={1.75} speed={1.0}>
+                <ParallaxLayer offset={1.8} speed={1.0}>
                     <div className="animation-layer" id="cloud5"></div>
                 </ParallaxLayer>
                 <ParallaxLayer offset={2} speed={0.1}>

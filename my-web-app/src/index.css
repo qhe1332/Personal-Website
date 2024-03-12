@@ -224,8 +224,10 @@ b {
   flex-direction: column;
   justify-content: space-between;
   margin: 20px 0 20px 0;
-  border: #525252 solid 1px;
+  /* border: #525252 solid 1px; */
   border-radius: 5px;
+  background-color: #FFFFFF;
+  box-shadow: 4px -4px 10px #b6b8ba;
 }
 .projectLink{
   text-decoration: none;
@@ -257,7 +259,7 @@ b {
 }
 .projectDesc{
   font-size: 0.9em;
-  height: 50%;
+  height: 60%;
 }
 /*cardslide*/
 .cardSlide-container{
