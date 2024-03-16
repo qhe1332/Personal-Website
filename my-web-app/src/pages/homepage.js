@@ -2,10 +2,11 @@ import React, { useState, useEffect }from "react";
 import { Parallax, ParallaxLayer, IParallax } from "@react-spring/parallax";
 import shin from "../assets/shin.png";
 import shinShadow from "../assets/shinShadow.png";
+import Footer from "../components/footer"
 const Navbar = React.lazy(() => import("../components/navbar"));
 const Project = React.lazy(() => import("../components/projectSection"));
 const Journey = React.lazy(() => import("../components/journeySection"));
-const Footer = React.lazy(() => import("../components/footer"));
+
 
 function Homepage(prop)
 {   
@@ -26,7 +27,7 @@ function Homepage(prop)
                 <ParallaxLayer offset={0.2} speed={1.7}>
                     <div className="animation-layer" id="cloud3"></div>
                 </ParallaxLayer>
-                <ParallaxLayer offset={0} speed={0.1}>
+                <ParallaxLayer offset={0} speed={0.2}>
                     <div className="intro">
                         <div className="intro-top">
                             <h1 className="title">Hello, I'm Cherry!</h1> 
@@ -44,16 +45,16 @@ function Homepage(prop)
                 <ParallaxLayer offset={0.5} speed={0.7}>
                     <div className="animation-layer" id="cloud2"></div>
                 </ParallaxLayer>
-                <ParallaxLayer offset={0.75} speed={0.1}>
+                <ParallaxLayer offset={0.75} speed={0.2}>
                     <div className="animation-layer" id="scrolldownbutton"></div>
                 </ParallaxLayer>
-                <ParallaxLayer offset={0} speed={0.1}>
+                <ParallaxLayer offset={0} speed={0.2}>
                     <Navbar />
                 </ParallaxLayer>
                 <ParallaxLayer offset={1.05} speed={1.7}>
                     <div className="animation-layer" id="cloud6"></div>
                 </ParallaxLayer>
-                <ParallaxLayer offset={1} speed={0.1}>
+                <ParallaxLayer offset={1} speed={0.2}>
                     <Project/>
                 </ParallaxLayer>
                 <ParallaxLayer offset={1.78} speed={0.8}>
@@ -62,11 +63,11 @@ function Homepage(prop)
                 <ParallaxLayer offset={1.8} speed={1.0}>
                     <div className="animation-layer" id="cloud5"></div>
                 </ParallaxLayer>
-                <ParallaxLayer offset={2} speed={0.1}>
+                <ParallaxLayer offset={2} speed={0.2}>
                     <Journey/>
                 </ParallaxLayer>
-                <ParallaxLayer offset={3.2} speed={0.1}>
-                    <Footer white="white"/>
+                <ParallaxLayer offset={3.2} speed={0.2}>
+                    <Footer white="white" logo="cherrywhite"/>
                 </ParallaxLayer>
             </Parallax>
             

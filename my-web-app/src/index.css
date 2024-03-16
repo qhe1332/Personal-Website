@@ -68,6 +68,20 @@ code {
 .nav li a:hover {
   color: white;
 }
+.nav-left{
+  display: flex;
+  align-items: center;
+}
+#logo{
+  width: 30px;
+  height: 30px;
+}
+.cherry{
+  background-image: url(./assets/cherry.png);
+}
+.cherrywhite{
+  background: url(./assets/cherrywhite.png);
+}
 
 /*--Home--*/
 .max-width{
@@ -293,12 +307,27 @@ b.small{
 #white{
   color: white;
 }
+.footer-wrap{
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: column;
+}
+.footer-notice{
+  text-align: end;
+  margin-right: 2vw;
+}
 .footer-right{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  margin-right: 2vw;
+}
+.footer-right-top{
   display: flex;
   flex-direction: row;
   align-items: center;
+  justify-content: flex-end;
   height: 50px;
-  margin-right: 2vw;
 }
 .contact-link{
   border-right: #FFFFFF solid;

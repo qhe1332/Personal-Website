@@ -31,7 +31,7 @@ function ProjectSlide(prop) {
                     title="Doraemon: Dorayaki Game"
                     type="Personal Project"
                     year="2022"
-                    link="https://github.com/qhe1332/CUNY-Connect"
+                    link="https://cherry-pie73.itch.io/doraemon-dorayaki-game"
                     desc="I build a mini game with p5.js based on Doraemon, a fictional character who loves to eat dorayaki. This is built for my Game Develpoment class." />
                 <ProjectContainer
                     img={cunyconnect}
