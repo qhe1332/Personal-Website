@@ -1,5 +1,4 @@
 import React from "react";
-import { BrowserRouter as Router, Routes, Route, Link, NavLink } from "react-router-dom";
 import ProjectContainer from "../components/projectBox"
 import gudetama from "../images/GudetamaWeb.png"
 import cunyconnect from "../images/Logo.png"
