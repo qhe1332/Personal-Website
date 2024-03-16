@@ -1,6 +1,7 @@
 import React from "react";
 import Navbar from "../components/navbar";
 import ProjectSlide from "../components/cardSlide";
+import Footer from "../components/footer";
 
 
 function Projects(prop)
@@ -14,6 +15,7 @@ function Projects(prop)
                     <ProjectSlide/>
                 </div>
             </div>
+            <Footer/>
         </div>
     );
 }
