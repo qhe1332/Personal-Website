@@ -5,7 +5,7 @@ import Navbar from "../components/navbar";
 function Media(prop)
 {
     return(    
-        <div>
+        <div className="page">
             <Navbar/>
         </div>
     );

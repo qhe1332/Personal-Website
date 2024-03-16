@@ -70,10 +70,13 @@ code {
 }
 
 /*--Home--*/
-/* .page {
-  display: flex;
+.max-width{
+  max-width: 1200px;
 }
-.home {
+.page {
+  max-width: 1500px;
+}
+/*.home {
   background-image: linear-gradient(to bottom,#B0DFFF , #ECFAFF,#ECFAFF, #FFCEA0, #EB7F78, #32177D,#1F007D, #080033 );
   height:200px;
 } */
@@ -123,7 +126,14 @@ b {
   font-family: Darumadrop;
   font-size: 1.5em;
 }
-
+b.big{
+  font-family: Darumadrop;
+  font-size: 1.7em;
+}
+b.small{
+  font-family: Darumadrop;
+  font-size: 1.5em;
+}
 .animation {
   display: block;
 	position: relative;
@@ -183,6 +193,7 @@ b {
   height: 20vh;
   width: 19vw;
   margin-left: 60vw;
+  opacity: 80%;
 }
 #cloud4 {
   background-image: url(./assets/cloud4.png);
@@ -195,6 +206,13 @@ b {
   height: 50vh;
   width: 80vw;
   margin-left: 50vw;
+}
+#cloud6 {
+  background-image: url(./assets/cloud6.png);
+  height: 15vh;
+  width: 18vw;
+  margin-left: 65vw;
+  opacity: 60%;
 }
 #scrolldownbutton{
   background-image: url(./assets/scrolldown.png);
@@ -266,4 +284,8 @@ b {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+}
+/*journey*/
+.journeyText{
+  line-height:280%;
 }

@@ -5,7 +5,7 @@ import Navbar from "../components/navbar";
 function ContactMe(prop)
 {
     return(    
-        <div>
+        <div className="page">
             <Navbar/>
             Contact Me
         </div>

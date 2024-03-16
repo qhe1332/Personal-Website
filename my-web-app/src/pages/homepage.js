@@ -49,6 +49,9 @@ function Homepage(prop)
                 <ParallaxLayer offset={0} speed={0.1}>
                     <Navbar />
                 </ParallaxLayer>
+                <ParallaxLayer offset={1.05} speed={1.7}>
+                    <div className="animation-layer" id="cloud6"></div>
+                </ParallaxLayer>
                 <ParallaxLayer offset={1} speed={0.1}>
                     <Project/>
                 </ParallaxLayer>

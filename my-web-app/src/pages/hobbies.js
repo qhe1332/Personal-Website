@@ -5,7 +5,7 @@ import Navbar from "../components/navbar";
 function Hobbies(prop)
 {
     return(    
-        <div>
+        <div className="page">
             <Navbar/>
             Hobbies
         </div>
