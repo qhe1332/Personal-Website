@@ -27,7 +27,7 @@ function Homepage(prop)
                 <ParallaxLayer offset={0.2} speed={1.7}>
                     <div className="animation-layer" id="cloud3"></div>
                 </ParallaxLayer>
-                <ParallaxLayer offset={0} speed={0.2}>
+                <ParallaxLayer offset={0} speed={0.3}>
                     <div className="intro">
                         <div className="intro-top">
                             <h1 className="title">Hello, I'm Cherry!</h1> 
@@ -45,16 +45,16 @@ function Homepage(prop)
                 <ParallaxLayer offset={0.5} speed={0.7}>
                     <div className="animation-layer" id="cloud2"></div>
                 </ParallaxLayer>
-                <ParallaxLayer offset={0.75} speed={0.2}>
+                <ParallaxLayer offset={0.75} speed={0.3}>
                     <div className="animation-layer" id="scrolldownbutton"></div>
                 </ParallaxLayer>
-                <ParallaxLayer offset={0} speed={0.2}>
+                <ParallaxLayer offset={0} speed={0.3}>
                     <Navbar />
                 </ParallaxLayer>
                 <ParallaxLayer offset={1.05} speed={1.7}>
                     <div className="animation-layer" id="cloud6"></div>
                 </ParallaxLayer>
-                <ParallaxLayer offset={1} speed={0.2}>
+                <ParallaxLayer offset={1} speed={0.3}>
                     <Project/>
                 </ParallaxLayer>
                 <ParallaxLayer offset={1.78} speed={0.8}>
@@ -63,10 +63,10 @@ function Homepage(prop)
                 <ParallaxLayer offset={1.8} speed={1.0}>
                     <div className="animation-layer" id="cloud5"></div>
                 </ParallaxLayer>
-                <ParallaxLayer offset={2} speed={0.2}>
+                <ParallaxLayer offset={2} speed={0.3}>
                     <Journey/>
                 </ParallaxLayer>
-                <ParallaxLayer offset={3.2} speed={0.2}>
+                <ParallaxLayer offset={3.2} speed={0.3}>
                     <Footer white="white" logo="cherrywhite"/>
                 </ParallaxLayer>
             </Parallax>
