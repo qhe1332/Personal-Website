@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkmy_web_app=self.webpackChunkmy_web_app||[]).push([[522],{522:function(e,c,s){s.r(c);s(791);var n=s(837),t=s(184);c.default=function(e){return(0,t.jsxs)("div",{className:"projectSection-container",children:[(0,t.jsx)("h1",{className:"title",children:"Recent Projects :)"}),(0,t.jsx)(n.Z,{})]})}}}]);
+//# sourceMappingURL=522.608636bf.chunk.js.map
