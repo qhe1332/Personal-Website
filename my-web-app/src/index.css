@@ -289,3 +289,21 @@ b.small{
 .journeyText{
   line-height:280%;
 }
+/*footer*/
+#white{
+  color: white;
+}
+.footer-right{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: 50px;
+  margin-right: 2vw;
+}
+.contact-link{
+  border-right: #FFFFFF solid;
+  margin-right: 10px;
+  padding-right: 10px;
+  align-self: center;
+  font-weight: 900;
+}

@@ -5,6 +5,7 @@ import shinShadow from "../assets/shinShadow.png";
 const Navbar = React.lazy(() => import("../components/navbar"));
 const Project = React.lazy(() => import("../components/projectSection"));
 const Journey = React.lazy(() => import("../components/journeySection"));
+const Footer = React.lazy(() => import("../components/footer"));
 
 function Homepage(prop)
 {   
@@ -64,7 +65,9 @@ function Homepage(prop)
                 <ParallaxLayer offset={2} speed={0.1}>
                     <Journey/>
                 </ParallaxLayer>
-
+                <ParallaxLayer offset={3.2} speed={0.1}>
+                    <Footer white="white"/>
+                </ParallaxLayer>
             </Parallax>
             
         </div> 
