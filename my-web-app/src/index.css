@@ -116,7 +116,6 @@ code {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  border: solid;
 }
 .journey {
   background-image: linear-gradient(to bottom,#ffa29c 2%,#1F007D, #080033);
@@ -126,7 +125,6 @@ code {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  border: solid;
 }
 .intro {
   margin: 15vw 30vw 0vw 6vw; /*top right bottom left*/
