@@ -44,6 +44,7 @@ code {
   display:flex;
   justify-content: space-between;
   align-items: center;
+  width: 100%;
 }
 
 .nav li {
@@ -84,11 +85,13 @@ code {
 }
 
 /*--Home--*/
-.max-width{
+/* .max-width{
   max-width: 1200px;
-}
+} */
 .page {
-  max-width: 1500px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 /*.home {
   background-image: linear-gradient(to bottom,#B0DFFF , #ECFAFF,#ECFAFF, #FFCEA0, #EB7F78, #32177D,#1F007D, #080033 );
@@ -97,6 +100,13 @@ code {
 .title {
   font-family: Darumadrop;
   font-size: 3.5em;
+  text-align: left;
+}
+.subTitle{
+  font-family: RobotoMono-Bold;
+  font-size: 1.5em;
+  text-align: left;
+  background-color: #ffa29c;
 }
 .opening {
   background-image: linear-gradient(to bottom,#B0DFFF 75%, #ECFAFF);
@@ -245,6 +255,12 @@ b.small{
   margin: 0 5vw 0 5vw;/*top right bottom left*/
   margin-block-start: 0em;
   margin-block-end: 0em;
+  max-width: 1500px !important;
+  width: 90%;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 /*project box*/
 .project-container {
@@ -253,7 +269,7 @@ b.small{
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  margin: 20px 0 20px 0;
+  margin: 20px;
   /* border: #525252 solid 1px; */
   border-radius: 5px;
   background-color: #FFFFFF;
@@ -292,10 +308,36 @@ b.small{
   height: 60%;
 }
 /*cardslide*/
-.cardSlide-container{
+.cardSlider-wrapper{
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 50px;
+}
+.cardSlide{
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  width: 95%;
+  overflow-x: scroll;
+  scroll-behavior: smooth;
+}
+.slider-icon{
+  z-index: 1;
+  border-radius: 100%;
+  position: absolute;
+  opacity: .5;
+}
+.slider-icon.left{
+  left: 0;
+}
+.slider-icon.right{
+  right: 0;
+}
+.slider-icon.left:hover, .slider-icon.right:hover{
+  background: rgba(151,155,191, 0.5);
+  opacity: 1;
 }
 /*journey*/
 .journeyText{
@@ -305,10 +347,14 @@ b.small{
 #white{
   color: white;
 }
+.contact-link#white{
+  border-right: white solid;
+}
 .footer-wrap{
   display: flex;
   justify-content: flex-end;
   flex-direction: column;
+  width: 100%;
 }
 .footer-notice{
   text-align: end;
@@ -328,9 +374,18 @@ b.small{
   height: 50px;
 }
 .contact-link{
-  border-right: #FFFFFF solid;
+  border: black;
+  border-right: solid;
   margin-right: 10px;
   padding-right: 10px;
   align-self: center;
   font-weight: 900;
+}
+.icon-container{
+  display: flex;
+  justify-content: right;
+}
+.icon{
+  margin: 0px 10px;
+  color: black;
 }

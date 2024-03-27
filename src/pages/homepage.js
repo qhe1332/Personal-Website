@@ -66,7 +66,7 @@ function Homepage(prop)
                 <ParallaxLayer offset={2} speed={0.3}>
                     <Journey/>
                 </ParallaxLayer>
-                <ParallaxLayer offset={3.2} speed={0.3}>
+                <ParallaxLayer offset={3.1} speed={0.3}>
                     <Footer white="white" logo="cherrywhite"/>
                 </ParallaxLayer>
             </Parallax>

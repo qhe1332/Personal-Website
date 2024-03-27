@@ -6,7 +6,7 @@ function ProjectContainer(prop) {
         <div>
             <a href={prop.link} target="_blank" className="projectLink">
                 <div className="project-container">
-                    <img className="projectPic" src={prop.img} />
+                    <img className="projectPic pixelart" src={prop.img} />
                     <div className="project-container-text">
                         <div className="project-container-text-top">
                             <div className="projectName">{prop.title}</div>
