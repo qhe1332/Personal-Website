@@ -67,6 +67,9 @@ code {
 }
 
 .nav li a:hover {
+  color: #B0DFFF;
+}
+#whitecover a:hover{
   color: white;
 }
 .nav-left{
@@ -106,7 +109,7 @@ code {
   font-family: RobotoMono-Bold;
   font-size: 1.5em;
   text-align: left;
-  background-color: #ffa29c;
+  background-color: #B0DFFF;
 }
 .opening {
   background-image: linear-gradient(to bottom,#B0DFFF 75%, #ECFAFF);
@@ -322,6 +325,8 @@ b.small{
   width: 95%;
   overflow-x: scroll;
   scroll-behavior: smooth;
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
 }
 .slider-icon{
   z-index: 1;

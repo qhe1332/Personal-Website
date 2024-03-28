@@ -49,7 +49,7 @@ function Homepage(prop)
                     <div className="animation-layer" id="scrolldownbutton"></div>
                 </ParallaxLayer>
                 <ParallaxLayer offset={0} speed={0.3}>
-                    <Navbar />
+                    <Navbar white="whitecover"/>
                 </ParallaxLayer>
                 <ParallaxLayer offset={1.05} speed={1.7}>
                     <div className="animation-layer" id="cloud6"></div>

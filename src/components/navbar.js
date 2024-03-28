@@ -6,13 +6,14 @@ function Navbar(prop) {
     return (
         <nav className="nav">
             <div className="nav-left">
-                <li><Link className="homeButton" to="/">Cherryland</Link></li>
+                <li id={prop.white}><Link className="homeButton" to="/">Cherryland</Link></li>
                 <img id="logo" src={cherry} />
             </div>
             <div className="nav-right">
-                <li><Link to="/projects">Projects</Link></li>
-                <li><Link to="/hobbies">Hobbies</Link></li>
-                <li><Link to="/contact">Contact Me</Link></li>
+                <li id={prop.white}><Link to="https://drive.google.com/file/d/1rP76UZFixkdj-QWAM4suOEaTwUEccaLI/view?usp=sharing" target="_blank">Resume</Link></li>
+                <li id={prop.white}><Link to="/projects">Projects</Link></li>
+                {/* <li><Link to="/hobbies">Hobbies</Link></li> */}
+                <li id={prop.white}><Link to="/contact">Contact Me</Link></li>
             </div>
         </nav>
     );

@@ -11,6 +11,8 @@ function ContactMe(prop)
             <div className="page-contents">
                 <div className="title">Contact Me</div>
                 <div>
+                    Please contact me via my email cherryhe5@gmail.com.
+                    
                 </div>
             </div>
             <Footer/>
