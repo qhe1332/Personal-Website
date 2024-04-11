@@ -60,13 +60,19 @@ function Homepage(prop)
                 <ParallaxLayer offset={1.78} speed={0.8}>
                     <div className="animation-layer" id="cloud4"></div>
                 </ParallaxLayer>
-                <ParallaxLayer offset={1.8} speed={1.0}>
+                <ParallaxLayer offset={2} speed={0.2}>
+                    <div className="animation-layer" id="smallDots"></div>
+                </ParallaxLayer>
+                <ParallaxLayer offset={2} speed={0.4}>
+                    <div className="animation-layer" id="bigDots"></div>
+                </ParallaxLayer>
+                <ParallaxLayer offset={1.99} speed={0.5}>
                     <div className="animation-layer" id="cloud5"></div>
                 </ParallaxLayer>
                 <ParallaxLayer offset={2} speed={0.3}>
                     <Journey/>
                 </ParallaxLayer>
-                <ParallaxLayer offset={3.1} speed={0.3}>
+                <ParallaxLayer offset={3.2} speed={0.3}>
                     <Footer white="white" logo="cherrywhite"/>
                 </ParallaxLayer>
             </Parallax>
