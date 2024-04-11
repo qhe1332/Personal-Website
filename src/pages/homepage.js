@@ -66,6 +66,9 @@ function Homepage(prop)
                 <ParallaxLayer offset={2} speed={0.4}>
                     <div className="animation-layer" id="bigDots"></div>
                 </ParallaxLayer>
+                <ParallaxLayer offset={2} speed={0.35}>
+                    <div className="animation-layer" id="smallStars"></div>
+                </ParallaxLayer>
                 <ParallaxLayer offset={1.99} speed={0.5}>
                     <div className="animation-layer" id="cloud5"></div>
                 </ParallaxLayer>

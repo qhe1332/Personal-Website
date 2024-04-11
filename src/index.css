@@ -72,7 +72,7 @@ code {
 }
 
 .nav li a:hover {
-  color: #B0DFFF;
+  color: #63a6d4;
 }
 
 #whitecover a:hover {
@@ -309,6 +309,13 @@ b.small {
   top: -20vh;
   opacity: 35%;
 }
+#smallStars {
+  background-image: url(./assets/smallStars.png);
+  height: 700vh;
+  width: 100vw;
+  top: -20vh;
+  opacity: 35%;
+}
 
 #scrolldownbutton {
   background-image: url(./assets/scrolldown.png);
@@ -342,9 +349,9 @@ b.small {
   justify-content: center;
 }
 
-#project-page{
-  /* background-image: linear-gradient(to bottom, #FFE7E7 , #FFCEA0); */
-}
+/* #project-page{
+  background-image: linear-gradient(to bottom, #FFE7E7 , #FFCEA0);
+} */
 
 .titleblock {
   display: flex;
@@ -457,6 +464,32 @@ b.small {
 /*journey*/
 .journeyText {
   line-height: 280%;
+}
+
+/*contact page*/
+.contactBlock{
+  display: flex;
+  flex-direction: row;
+  width: 90vw;
+  height: 80vh;
+}
+.contactPic{
+  object-fit: cover;
+  width: 40%;
+}
+.contactBlock-right{
+  padding: 20px 50px;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.contactLinks a{
+  text-decoration: none;
+  color: black;
+}
+.contactLinks a:hover{
+  color: #63a6d4;
 }
 
 /*footer*/
