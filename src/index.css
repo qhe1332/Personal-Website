@@ -157,7 +157,7 @@ code {
 }
 
 .intro {
-  margin: 15vw 30vw 0vw 6vw;
+  margin: 15vw 35vw 0vw 10vw;
   /*top right bottom left*/
 
 }
@@ -238,6 +238,25 @@ b.small {
 #shiroSpritesheet {
   animation: moveSpritesheet 1s steps(8) infinite;
   height: calc(80px * var(--pixel-size));
+}
+
+#kirbyShadow {
+  width: calc(36px * var(--pixel-size));
+  height: calc(35px * var(--pixel-size));
+  position: absolute;
+}
+
+#kirby {
+  width: calc(36px * var(--pixel-size));
+  height: calc(35px * var(--pixel-size));
+  overflow: hidden;
+  position: relative;
+}
+
+#kirbySpritesheet {
+  animation: moveSpritesheet 1s steps(16) infinite;
+  height: calc(31px * var(--pixel-size));
+  
 }
 
 @keyframes moveSpritesheet {
@@ -325,12 +344,12 @@ b.small {
 }
 
 .projectSection-container {
-  margin: 0vw 6vw;
+  margin: 0vw 10vw 0vw 40vw;
   /*top right bottom left*/
 }
 
 .journeySection-container {
-  margin: 0vw 6vw;
+  margin: 0vw 10vw;
   /*top right bottom left*/
   color: #FFFFFF;
 }
@@ -484,6 +503,10 @@ b.small {
   flex-direction: column;
   justify-content: space-around;
 }
+.contactBlock-right-top{
+  display: flex;
+  align-items: flex-end;
+}
 .contactLinks a{
   text-decoration: none;
   color: black;
@@ -491,6 +514,24 @@ b.small {
 .contactLinks a:hover{
   color: #63a6d4;
 }
+@media screen and (max-width: 600px) {
+  .contactBlock{
+    flex-direction: column;
+    height: 90vh;
+  }
+  .contactPic{
+    width: 100%;
+    height: 40%;
+  }
+  .contactBlock-right{
+    padding: 10px;
+    width: fit-content;
+    height: 100%;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+}
+
 
 /*footer*/
 #white {
