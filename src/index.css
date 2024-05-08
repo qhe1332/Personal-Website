@@ -50,6 +50,7 @@ code {
   justify-content: space-between;
   align-items: center;
   width: 100%;
+  z-index: 1;
 }
 
 .nav li {
@@ -97,6 +98,52 @@ code {
   background: url(./assets/cherrywhite.png);
 }
 
+.hamburger {
+  width: 2rem;
+  height: 2rem;
+  position: fixed;
+  top: 15px;
+  right: 20px;
+  z-index: 200;
+  display: flex;
+  justify-content: space-around;
+  flex-flow: column nowrap;
+}
+.hamburger div{
+  width: 2rem;
+  height: 0.25rem;
+  border-radius: 10px;
+}
+
+@media screen and (max-width: 600px) {
+  .nav{
+    z-index: 100;
+  }
+  .nav-right{
+    display: none;
+    flex-flow: column nowrap;
+    background-color: #ECFAFF;
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 300px;
+    padding-top: 3.5rem;
+    z-index: 100;
+  }
+  .nav li {
+    display: block;
+    width: 100%;
+  }
+  .projectSection-container {
+    margin: 0vw 10vw;
+    /*top-bottom left-right*/
+  }
+  .cardSlider-wrapper {
+    border: solid black;
+  }
+}
+
 /*--Home--*/
 /* .max-width{
   max-width: 1200px;
@@ -120,7 +167,7 @@ code {
 
 .subTitle {
   font-family: RobotoMono-Regular;
-  font-size: 1.3em;
+  font-size: 1.5em;
   text-align: left;
   color: #545454;
 }
@@ -157,14 +204,33 @@ code {
 }
 
 .intro {
-  margin: 15vw 35vw 0vw 10vw;
+  margin: 10vw 35vw 0vw 10vw;
   /*top right bottom left*/
-
 }
-
 .intro-top {
   display: flex;
   flex-direction: row;
+}
+.intro-top .title br{
+  display: none;
+}
+@media screen and (max-width: 900px) {
+  .intro-top .title br{
+    display: block;
+  }
+}
+@media screen and (max-width: 600px) {
+  .intro {
+    margin: 10vw;
+  }
+  .intro-top .title{
+    width: 60%
+  }
+}
+@media screen and (max-width: 360px) {
+  .title{
+    font-size: 3em;
+  }
 }
 
 b {
@@ -180,6 +246,25 @@ b.big {
 b.small {
   font-family: Darumadrop;
   font-size: 1.5em;
+}
+
+.contactButton {
+  background-color: black;
+  border-radius: 30px 5px;
+  font-family: Darumadrop;
+  font-size: 1.5em;
+  padding: 10px 20px;
+  width: fit-content;
+}
+.contactButton a{
+  text-decoration: none;
+  color: white;
+}
+.contactButton:hover{
+  background-color: white;
+}
+.contactButton:hover a{
+  color: black;
 }
 
 .animation {
@@ -274,14 +359,16 @@ b.small {
   width: 37vw;
   height: 50vh;
   left: -15vw;
+  z-index: -1;
 }
 
 #cloud2 {
   background-image: url(./assets/cloud2.png);
-  height: 97vh;
-  width: 150vw;
-  margin-left: 30vw;
-  background-size: 68%;
+  height: 50vw;
+  width: 100vw;
+  right: -30vw;
+  background-size: 100%;
+  z-index: -1;
 }
 
 #cloud3 {
@@ -515,6 +602,10 @@ b.small {
   color: #63a6d4;
 }
 @media screen and (max-width: 600px) {
+  .projectSection-container {
+    margin: 0vw 10vw;
+    /*top right bottom left*/
+  }
   .contactBlock{
     flex-direction: column;
     height: 90vh;

@@ -19,13 +19,13 @@ import shiro from "../assets/shiro.png"
 import shadow from "../assets/shinShadow.png";
 
 
-function Projects(prop) {
+function Portfolio(prop) {
     return (
         <div className="page" id="project-page">
             <Navbar />
             <div className="page-contents">
                 <div className="titleblock">
-                    <div className="title">Projects</div>
+                    <div className="title">My Portfolio</div>
                     <span id="shiro">
                         <img className="pixelart" id="shiroShadow" src={shadow} />
                         <img className="pixelart" id="shiroSpritesheet" src={shiro} />
@@ -67,4 +67,4 @@ function Projects(prop) {
     );
 }
 
-export default Projects;
+export default Portfolio;

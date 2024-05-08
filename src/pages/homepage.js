@@ -1,11 +1,14 @@
 import React, { useState, useEffect }from "react";
 import { Parallax, ParallaxLayer, IParallax } from "@react-spring/parallax";
+import { BrowserRouter as Router, Routes, Route, Link, NavLink } from "react-router-dom";
 import shin from "../assets/shin.png";
 import shinShadow from "../assets/shinShadow.png";
 import Footer from "../components/footer"
 const Navbar = React.lazy(() => import("../components/navbar"));
+const NavRight = React.lazy(() => import("../components/navbarRight"));
 const Project = React.lazy(() => import("../components/projectSection"));
 const Journey = React.lazy(() => import("../components/journeySection"));
+
 
 
 function Homepage(prop)
@@ -27,18 +30,6 @@ function Homepage(prop)
                 <ParallaxLayer offset={0.2} speed={1.7}>
                     <div className="animation-layer" id="cloud3"></div>
                 </ParallaxLayer>
-                <ParallaxLayer offset={0} speed={0.3}>
-                    <div className="intro">
-                        <div className="intro-top">
-                            <h1 className="title">Hello, I'm Cherry!</h1> 
-                            <span id="shin">
-                                <img className="pixelart" id="shinShadow" src={shinShadow}/>
-                                <img className="pixelart" id="shinSpritesheet" src={shin}/>
-                            </span>
-                        </div>
-                        <h4>I'm a self-motivated <b>WEB DEVELOPER</b> who  is passionate about building user-centered applications. I am familar with React.js, HTML/CSS, Javascript, p5.js, Unity, and Java. I also have skills in Adobe Suite.</h4>
-                    </div>
-                </ParallaxLayer>
                 <ParallaxLayer offset={0.7} speed={1.0}>
                     <div className="animation-layer" id="cloud1"></div>
                 </ParallaxLayer>
@@ -50,6 +41,20 @@ function Homepage(prop)
                 </ParallaxLayer>
                 <ParallaxLayer offset={0} speed={0.3}>
                     <Navbar white="whitecover"/>
+                    <div className="intro">
+                        <div className="intro-top">
+                            <h1 className="title">Hello, <br></br>I'm Cherry!</h1> 
+                            <span id="shin">
+                                <img className="pixelart" id="shinShadow" src={shinShadow}/>
+                                <img className="pixelart" id="shinSpritesheet" src={shin}/>
+                            </span>
+                        </div>
+                        <h4>I'm a self-motivated <b>WEB DEVELOPER</b> who  is passionate about building user-centered applications. I am familar with React.js, HTML/CSS, Javascript, p5.js, Unity, and Java. I also have skills in Adobe Suite.</h4>
+                        <div className="contactButton"><Link to="/contact">Get in Touch! -&gt;</Link></div>
+                    </div>
+                </ParallaxLayer>
+                <ParallaxLayer sticky={{ start: 1, end: 3.5 }} speed={0.3}>
+                    <NavRight white="whitecover"/>
                 </ParallaxLayer>
                 <ParallaxLayer offset={1.05} speed={1.7}>
                     <div className="animation-layer" id="cloud6"></div>
