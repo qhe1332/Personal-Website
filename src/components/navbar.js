@@ -1,7 +1,6 @@
 import React from "react";
 import { BrowserRouter as Router, Routes, Route, Link, NavLink } from "react-router-dom";
 import cherry from "../assets/cherry.png"
-import NavRight from "./navbarRight"
 import NavHamburger from "./navbarHamburger"
 
 function Navbar(prop) {
@@ -11,8 +10,7 @@ function Navbar(prop) {
                 <li id={prop.white}><Link className="homeButton" to="/">Cherryland</Link></li>
                 <img id="logo" src={cherry} />
             </div>
-            <NavHamburger/>
-            <NavRight white={prop.white}/>
+            <NavHamburger white={prop.white}/>
         </nav>
     );
 }

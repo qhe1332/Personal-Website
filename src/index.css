@@ -99,13 +99,13 @@ code {
 }
 
 .hamburger {
+  display: none;
   width: 2rem;
   height: 2rem;
   position: fixed;
   top: 15px;
   right: 20px;
   z-index: 200;
-  display: flex;
   justify-content: space-around;
   flex-flow: column nowrap;
 }
@@ -113,6 +113,8 @@ code {
   width: 2rem;
   height: 0.25rem;
   border-radius: 10px;
+  transform-origin: 1px;
+  transition: all 0.3s ease-in-out;
 }
 
 @media screen and (max-width: 600px) {
@@ -120,7 +122,6 @@ code {
     z-index: 100;
   }
   .nav-right{
-    display: none;
     flex-flow: column nowrap;
     background-color: #ECFAFF;
     position: fixed;
@@ -130,17 +131,50 @@ code {
     width: 300px;
     padding-top: 3.5rem;
     z-index: 100;
+    transition: 0.3s ease-in-out;
+  }
+  #open.nav-right{
+    transform: translateX(0);
+  }
+  #close.nav-right{
+    transform: translateX(100%);
   }
   .nav li {
+
     display: block;
     width: 100%;
   }
-  .projectSection-container {
-    margin: 0vw 10vw;
-    /*top-bottom left-right*/
+  #whitecover a:hover {
+    color: #63a6d4;
   }
-  .cardSlider-wrapper {
-    border: solid black;
+  .hamburger {
+    display: flex;
+  }
+  #close.hamburger div{
+    background-color: black;
+  }
+  #close.hamburger div:nth-child(1){
+    transform: rotate(0deg);
+  }
+  #close.hamburger div:nth-child(2){
+    transform: translateX(0);
+    opacity: 1;
+  }
+  #close.hamburger div:nth-child(3){
+    transform: rotate(0deg);
+  }
+  #open.hamburger div{
+    background-color: gray;
+  }
+  #open.hamburger div:nth-child(1){
+    transform: rotate(45deg);
+  }
+  #open.hamburger div:nth-child(2){
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  #open.hamburger div:nth-child(3){
+    transform: rotate(-45deg);
   }
 }
 
@@ -603,8 +637,16 @@ b.small {
 }
 @media screen and (max-width: 600px) {
   .projectSection-container {
+    margin: 0vw ;
+    /*top-bottom left-right*/
+  }
+  .projectSection-container .title{
     margin: 0vw 10vw;
-    /*top right bottom left*/
+    /*top-bottom left-right*/
+  }
+  .journeySection-container{
+    margin: 0vw 10vw;
+    /*top-bottom left-right*/
   }
   .contactBlock{
     flex-direction: column;

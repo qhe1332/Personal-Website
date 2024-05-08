@@ -1,25 +1,23 @@
 import React, { useState } from "react";
 import { BrowserRouter as Router, Routes, Route, Link, NavLink } from "react-router-dom";
-
-var color = "black";
-const divStyle = {
-    backgroundColor: ({ color } ? 'gray' : 'black'),
-};
+import NavRight from "./navbarRight"
 
 function NavHamburger(prop) {
     const [open, setOpen] = useState(false);
-    console.log(color);
-    if(open == true){
-        color = "gray";
-    } else {
-        color = "black";
-    }
+    const openNav = () => {
+        setOpen(!open);
+       
+    };
+
     return (
-        <div className="hamburger" open={open} onClick={() => setOpen(!open)}>
-            <div style={divStyle}/>
-            <div style={divStyle}/>
-            <div style={divStyle}/>
-        </div>
+        <>
+            <div className="hamburger" id={open ? "open" : "close"} open={open} onClick={openNav}>
+                <div />
+                <div />
+                <div />
+            </div>
+            <NavRight white={prop.white} open={open}/>
+        </>
     );
 }
 
