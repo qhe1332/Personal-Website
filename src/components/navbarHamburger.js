@@ -6,18 +6,17 @@ function NavHamburger(prop) {
     const [open, setOpen] = useState(false);
     const openNav = () => {
         setOpen(!open);
-       
     };
 
     return (
-        <>
+        <div id={prop.visible}>
             <div className="hamburger" id={open ? "open" : "close"} open={open} onClick={openNav}>
                 <div />
                 <div />
                 <div />
             </div>
             <NavRight white={prop.white} open={open}/>
-        </>
+        </div>
     );
 }
 
