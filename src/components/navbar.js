@@ -5,8 +5,8 @@ import NavHamburger from "./navbarHamburger"
 
 function Navbar(prop) {
     return (
-        <nav className="nav">
-            <div className="nav-left" id={prop.leftNotVisible}>
+        <nav className="nav" id={prop.mobile}>
+            <div className={`nav-left ${prop.leftNotVisible}`}>
                 <li id={prop.white}><Link className="homeButton" to="/">Cherryland</Link></li>
                 <img id="logo" src={cherry} />
             </div>

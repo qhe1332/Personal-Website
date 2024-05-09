@@ -16,7 +16,8 @@ function Homepage(prop) {
     return (
         <div className="page">
             <div className="home">
-                <Parallax pages={3.5} style={{ top: '0', left: '0' }} className="animation">
+                <Navbar white="whitecover" leftNotVisible="notVisible" mobile="mobile"/>
+                <Parallax pages={3.7} style={{ top: '0', left: '0' }} className="animation">
                     <ParallaxLayer offset={0} speed={0} onClick={() => this.ref.parallax.scrollTo(1)}>
                         <div className="opening"></div>
                     </ParallaxLayer>
@@ -38,6 +39,9 @@ function Homepage(prop) {
                     <ParallaxLayer offset={0.75} speed={0.3}>
                         <div className="animation-layer pixelart" id="scrolldownbutton"></div>
                     </ParallaxLayer>
+                    {/* <ParallaxLayer sticky={{ start: 0, end: 3.5 }} speed={0.3}>
+                        <Navbar white="whitecover" leftNotVisible="notVisible" mobile="mobile"/>
+                    </ParallaxLayer> */}
                     <ParallaxLayer offset={0} speed={0.3}>
                         <Navbar white="whitecover" rightNotVisible="notVisible" />
                         <div className="intro">
@@ -51,9 +55,6 @@ function Homepage(prop) {
                             <h4>I'm a self-motivated <b>WEB DEVELOPER</b> who  is passionate about building user-centered applications. I am familar with React.js, HTML/CSS, Javascript, p5.js, Unity, and Java. I also have skills in Adobe Suite.</h4>
                             <div className="contactButton"><Link to="/contact">Get in Touch! -&gt;</Link></div>
                         </div>
-                    </ParallaxLayer>
-                    <ParallaxLayer sticky={{ start: 0, end: 3.5 }} speed={0.3}>
-                        <Navbar white="whitecover" leftNotVisible="notVisible" />
                     </ParallaxLayer>
                     <ParallaxLayer offset={1.05} speed={1.7}>
                         <div className="animation-layer" id="cloud6"></div>
@@ -79,7 +80,7 @@ function Homepage(prop) {
                     <ParallaxLayer offset={2} speed={0.3}>
                         <Journey />
                     </ParallaxLayer>
-                    <ParallaxLayer offset={3.2} speed={0.3}>
+                    <ParallaxLayer offset={3.45} speed={0.3}>
                         <Footer white="white" logo="cherrywhite" />
                     </ParallaxLayer>
                 </Parallax>

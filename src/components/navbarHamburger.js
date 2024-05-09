@@ -9,7 +9,7 @@ function NavHamburger(prop) {
     };
 
     return (
-        <div id={prop.visible}>
+        <div className={prop.visible}>
             <div className="hamburger" id={open ? "open" : "close"} open={open} onClick={openNav}>
                 <div />
                 <div />
