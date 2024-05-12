@@ -17,7 +17,7 @@ function Homepage(prop) {
         <div className="page">
             <div className="home">
                 <Navbar white="whitecover" leftNotVisible="notVisible" mobile="mobile"/>
-                <Parallax pages={3.7} style={{ top: '0', left: '0' }} className="animation">
+                <Parallax pages={3.99} style={{ top: '0', left: '0' }} className="animation">
                     <ParallaxLayer offset={0} speed={0} onClick={() => this.ref.parallax.scrollTo(1)}>
                         <div className="opening"></div>
                     </ParallaxLayer>
@@ -77,10 +77,10 @@ function Homepage(prop) {
                     <ParallaxLayer offset={1.99} speed={0.5}>
                         <div className="animation-layer" id="cloud5"></div>
                     </ParallaxLayer>
-                    <ParallaxLayer offset={2} speed={0.3}>
+                    <ParallaxLayer offset={2} factor={2} speed={0.3}>
                         <Journey />
                     </ParallaxLayer>
-                    <ParallaxLayer offset={3.45} speed={0.3}>
+                    <ParallaxLayer offset={3.84} speed={0.3}>
                         <Footer white="white" logo="cherrywhite" />
                     </ParallaxLayer>
                 </Parallax>
