@@ -59,11 +59,11 @@ function Homepage(prop) {
                     <ParallaxLayer offset={1.05} speed={1.7}>
                         <div className="animation-layer" id="cloud6"></div>
                     </ParallaxLayer>
-                    <ParallaxLayer offset={1} speed={0.3}>
-                        <Project />
+                    <ParallaxLayer offset={1.25} speed={0.7}>
+                        <div className="animation-layer" id="cloud7"></div>
                     </ParallaxLayer>
-                    <ParallaxLayer offset={1.78} speed={0.8}>
-                        <div className="animation-layer" id="cloud4"></div>
+                    <ParallaxLayer offset={1.0} speed={0.3}>
+                        <Project />
                     </ParallaxLayer>
                     <ParallaxLayer offset={2} speed={0.2}>
                         <div className="animation-layer" id="smallDots"></div>
@@ -74,10 +74,13 @@ function Homepage(prop) {
                     <ParallaxLayer offset={2} speed={0.35}>
                         <div className="animation-layer" id="smallStars"></div>
                     </ParallaxLayer>
-                    <ParallaxLayer offset={1.99} speed={0.5}>
+                    <ParallaxLayer offset={2} speed={0.5}>
+                        <div className="animation-layer" id="cloud4"></div>
+                    </ParallaxLayer>
+                    <ParallaxLayer offset={2} speed={0.7}>
                         <div className="animation-layer" id="cloud5"></div>
                     </ParallaxLayer>
-                    <ParallaxLayer offset={2} factor={2} speed={0.3}>
+                    <ParallaxLayer offset={2.25} factor={2} speed={0.3}>
                         <Journey />
                     </ParallaxLayer>
                     <ParallaxLayer offset={3.84} speed={0.3}>

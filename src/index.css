@@ -346,24 +346,38 @@ b.small {
 
 #cloud4 {
   background-image: url(./assets/cloud4.png);
-  height: 30vh;
+  height: 26vh;
   width: 37vw;
   margin-left: -5vw;
+  margin-top: -20vh;
+  background-size: 80%;
+  opacity: 90%;
 }
 
 #cloud5 {
   background-image: url(./assets/cloud5.png);
   height: 60vh;
   width: 90vw;
-  margin-left: 50vw;
+  margin-left: 52vw;
+  margin-top: -7vh;
 }
 
 #cloud6 {
   background-image: url(./assets/cloud6.png);
-  height: 15vh;
-  width: 18vw;
-  margin-left: 65vw;
+  height: 20vh;
+  width: 20vw;
+  margin-left: -3vw;
   opacity: 60%;
+  background-size: 100%;
+}
+
+#cloud7 {
+  background-image: url(./assets/cloud7.png);
+  height: 100vh;
+  width: 120vw;
+  margin-left: 25vw;
+  opacity: 60%;
+  background-size: 95%;
 }
 
 #smallDots {
@@ -769,7 +783,12 @@ b.small {
     flex-direction: column;
     justify-content: space-between;
   }
+  .journeySection-container {
+    margin-top: -10vh;
+  }
 }
-@media screen and (max-width: 360px) {
-  
+@media screen and (max-width: 450px) {
+  .journeySection-container {
+    margin-top: -22vh;
+  }
 }
