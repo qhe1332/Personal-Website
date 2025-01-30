@@ -5,7 +5,7 @@ function NavRight(prop) {
     
     return (
         <div className="nav-right" id={prop.open ? "open" : "close"}>
-            <li id={prop.white}><Link to="https://drive.google.com/file/d/1rP76UZFixkdj-QWAM4suOEaTwUEccaLI/view?usp=sharing" target="_blank">Resume</Link></li>
+            <li id={prop.white}><Link to="https://drive.google.com/file/d/1Pz6nL0XIbJSYrcAnu2gUXnkmAoZRERtb/view?usp=sharing" target="_blank">Resume</Link></li>
             <li id={prop.white}><Link to="/portfolio">Portfolio</Link></li>
             {/* <li><Link to="/hobbies">Hobbies</Link></li> */}
             <li id={prop.white}><Link to="/contact">Contact Me</Link></li>

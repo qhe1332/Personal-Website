@@ -52,7 +52,7 @@ function Homepage(prop) {
                                     <img className="pixelart" id="shinSpritesheet" src={shin} />
                                 </span>
                             </div>
-                            <h4>I'm a self-motivated <b>WEB DEVELOPER</b> who  is passionate about building user-centered applications. I am familar with React.js, HTML/CSS, Javascript, p5.js, Unity, and Java. I also have skills in Adobe Suite.</h4>
+                            <h4>I'm a self-motivated <b>WEB DEVELOPER</b> who is passionate about building user-centered applications and specialize in web security. I am familar with React.js, HTML/CSS, Javascript, p5.js, Unity, Python, C++, and Java. I also have skills in Adobe Suite.</h4>
                             <div className="contactButton"><Link to="/contact">Get in Touch! -&gt;</Link></div>
                         </div>
                     </ParallaxLayer>
